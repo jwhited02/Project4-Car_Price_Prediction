@@ -129,10 +129,10 @@ There is a negative correlation between highway mileage and car price, meaning c
 ### Correlation Matrix
 ![Correlation Matrix](images/correlation_matrix_heatmap.png)
 
-- Six of our top ten most important features show strong positive scorrelation with eachother as they all describe the size of the car.
-- While it may seem obvious that car width and car height have a strong positive correlation, it's less obvious that horsepower and curb weight would have this correlation.
-- Unsurprisingly, the features related to fuel efficiency are heavily correlated with each other and inversely related to all other factors. This tells us that larger cars have worse fuel efficiency and that BMWs tend to be less efficient than their competitors.
-- The final two features are brand_bmw and peakrpm. Brand_bmw seems to have little correlation to other features, but the relationship it does have shows that BMWs tend to be larger and less fuel efficient. A similar correlation that includes all of the brands might help people decide which vehicle to purchase. Peakrpm shows negative correlation with every feature aside from horsepower, which makes sense because the bigger the car the lower the rpm.
+- Six of the most important features—enginesize, curbweight, carwidth, carlength, wheelbase, and horsepower—show strong positive correlations with each other. These features are all related to the size and power of the car, which is expected, as larger cars typically have more powerful engines and greater weight.
+- Horsepower and curbweight show a clear positive correlation, indicating that heavier cars tend to have more powerful engines. While it’s intuitive that carwidth and carlength are positively correlated, it's also notable that enginesize and horsepower are strongly related to these dimensions as well.
+- On the other hand, fuel efficiency features like citympg and highwaympg show strong negative correlations with size-related factors like enginesize, curbweight, and horsepower. This suggests that larger, more powerful cars tend to have worse fuel efficiency, which aligns with expectations. Furthermore, brand_bmw shows a slight positive correlation with size-related features, suggesting that BMWs may tend to be larger and more powerful, though the correlation is not particularly strong.
+- Finally, peakrpm shows a negative correlation with most size-related features, except for horsepower, where it has a slight positive correlation. This suggests that larger cars typically have lower peak RPMs, but more powerful engines may require higher RPMs. A broader analysis across more brands would provide deeper insights into these relationships and help guide vehicle selection based on both performance and efficiency.
 ---
 
 ## Conclusions
